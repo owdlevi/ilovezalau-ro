@@ -1,9 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: `I Love Zalau`,
+    author: `David Levente Dozsa`,
+    about: `"I Love Zalău" isi propune sa devina un loc de intalnire virtual pentru zalauanii de pretutindeni si pentru toti cei care cunosc si iubesc acest oras. `,
+    description: `"I Love Zalău" isi propune sa devina un loc de intalnire virtual pentru zalauanii de pretutindeni si pentru toti cei care cunosc si iubesc acest oras.`,
+    siteUrl: `https://www.ilovezalau.ro/`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        minify: false, // Breaks styles if not set to false
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
