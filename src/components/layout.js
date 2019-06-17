@@ -4,7 +4,7 @@ import Sticky from "react-stickynode"
 import { ThemeProvider } from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header/'
+import Header from './Header/'
 import ResetCss from "./resetCSS"
 import { theme } from '../theme'
 import './layout.css'
