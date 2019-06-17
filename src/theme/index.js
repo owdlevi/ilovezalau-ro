@@ -5,7 +5,7 @@ export const theme = {
   space: [0, 5, 8, 10, 15, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100, 120],
   fontSizes: [10, 12, 14, 15, 16, 18, 24, 30, 36, 48, 80, 96],
   fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-  fontFamily: ["'Fira Sans',sans-serif", "'Poppins', sans-serif"],
+  fontFamily: ["'Roboto',sans-serif", "'Lato', sans-serif"],
   lineHeights: {
     normal: 1,
     normalText: 1.5,

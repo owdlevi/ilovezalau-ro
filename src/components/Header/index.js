@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from 'gatsby'
+import Menu from "./Menu"
 
 import HeaderWrapper, {
   NavbarWrapper,
@@ -10,6 +11,23 @@ import HeaderWrapper, {
   SearchCloseButton,
   NavSearchFromWrapper,
 } from "./Header.style"
+
+import LogoImage from '../../images/logo.png'
+
+const MenuItems = [
+  {
+    label: "Home",
+    url: "/",
+  },
+  {
+    label: "About Us",
+    url: "/about-us",
+  },
+  {
+    label: "404 Page",
+    url: "/404",
+  },
+]
 
 const Header = ({className, siteTitle, ...props}) => {
 
@@ -31,25 +49,16 @@ const Header = ({className, siteTitle, ...props}) => {
 
   return (
     <HeaderWrapper className={addAllClasses.join(" ")} {...props}>
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '1.45rem 1.0875rem',
-        }}
-      >
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: 'white',
-              textDecoration: 'none',
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </h1>
-      </div>
+      <NavbarWrapper className="navbar">
+      <Logo>
+        <Link to="/">
+          <img src={LogoImage} alt="logo" />
+        </Link>
+      </Logo>
+      <MenuWrapper>
+        <Menu items={MenuItems} />
+      </MenuWrapper>
+      </NavbarWrapper>
     </HeaderWrapper>
   )
 }

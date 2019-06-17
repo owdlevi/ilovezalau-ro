@@ -7,7 +7,7 @@ const HeaderWrapper = styled.header`
   transition: 0.25s ease-in-out;
 `;
 
-const NavbarWrapper = styled.div`
+export const NavbarWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,7 +38,7 @@ export const Logo = styled.div`
   img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 40px;
   }
 `;
 
