@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components'
 
 import Header from './Header/'
 import ResetCss from "./resetCSS"
+import Footer from './Footer'
 import { theme } from '../theme'
 
 const Layout = ({ children }) => {
@@ -20,12 +21,17 @@ const Layout = ({ children }) => {
           style={{
             margin: '0 auto',
             maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: '1.45rem',
+            padding: '3.45rem 1.0875rem',
+            minHeight: 1000,
           }}
         >
           {children}
         </div>
+        <Footer>
+          Copyright &copy; {new Date().getFullYear()}
+          <a href="https://www.crazycode.com/"> Crazy Code</a>
+        </Footer>
+
       </>
     </ThemeProvider>
   )

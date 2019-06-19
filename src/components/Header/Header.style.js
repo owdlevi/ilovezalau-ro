@@ -5,6 +5,7 @@ const HeaderWrapper = styled.header`
   position: relative;
   z-index: 99999;
   transition: 0.25s ease-in-out;
+  background-color: pink;
 `;
 
 export const NavbarWrapper = styled.div`
@@ -13,7 +14,7 @@ export const NavbarWrapper = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid #DBDBDB;
   padding: 30px 75px;
-  background-color: #fff;
+  background-color: pink;
   transition: 0.25s ease-in-out;
   @media (max-width: 1400px) {
     padding: 25px 45px;
@@ -268,7 +269,9 @@ export const HamburgerIcon = styled.div`
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
+  transition: .5s ease-in-out;
   span {
+    transition: .5s ease-in-out;
     display: block;
     height: 2px;
     background-color: #292929;
@@ -276,6 +279,15 @@ export const HamburgerIcon = styled.div`
     &:last-child {
       margin-bottom: 0;
       width: 20px;
+    }
+  }
+  &:hover{
+    span{
+      width: 20px;
+      &:first-child, 
+      &:last-child {
+        width:30px;
+      }
     }
   }
 `;

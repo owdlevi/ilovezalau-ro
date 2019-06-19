@@ -33,20 +33,20 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Lato`,
-            variants: [`300`, `400`, `500`, `600`, `700`],
-          },
-          {
-            family: `Roboto`,
-            variants: [`100`, `300`, `400`, `500`, `600`, `700`],
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Lato`,
+    //         variants: [`300`, `400`, `500`, `600`, `700`],
+    //       },
+    //       {
+    //         family: `Roboto`,
+    //         variants: [`100`, `300`, `400`, `500`, `600`, `700`],
+    //       },
+    //     ],
+    //   },
+    // },
   ],
 }

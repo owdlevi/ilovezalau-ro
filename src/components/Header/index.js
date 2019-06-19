@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { Link } from 'gatsby'
+import { DrawerProvider } from './Drawer/DrawerContext'
 import Menu from "./Menu"
+import MobileMenu from './MobileMenu'
 
 import HeaderWrapper, {
   NavbarWrapper,
@@ -50,6 +52,9 @@ const Header = ({className, siteTitle, ...props}) => {
   return (
     <HeaderWrapper className={addAllClasses.join(" ")} {...props}>
       <NavbarWrapper className="navbar">
+      <DrawerProvider>
+        <MobileMenu items={MenuItems} logo={LogoImage} />
+      </DrawerProvider>
       <Logo>
         <Link to="/">
           <img src={LogoImage} alt="logo" />
